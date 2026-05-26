@@ -1,6 +1,6 @@
 from telegram.ext import ApplicationBuilder, MessageHandler, filters
 
-BOT_TOKEN = '8272486762:AAEdf3t_rRIQec-O2vwKNd5vLmfE5uGoXXc'
+BOT_TOKEN = 'bot_token'
 
 async def get_chat_id(update, context):
     chat_id = update.effective_chat.id
