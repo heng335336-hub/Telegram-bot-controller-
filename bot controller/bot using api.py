@@ -2,10 +2,10 @@ import aiohttp
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
 
-TELEGRAM_TOKEN = "8272486762:AAEdf3t_rRIQec-O2vwKNd5vLmfE5uGoXXc"
-OPENAI_API_KEY = "AIzaSyBbHeITnlc1Z3p5e6E_snAvx88K3G1dqi8"
+TELEGRAM_TOKEN = "bot_token"
+OPENAI_API_KEY = "api_of_ai"
 
-BOT_USERNAME = "@hglim334bot"
+BOT_USERNAME = "bot_username"
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_message = update.message.text
@@ -16,7 +16,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             return
         user_message = user_message.replace(BOT_USERNAME, "").strip()
 
-    url = "https://aistudio.google.com/projects"
+    url = "url_of_site_where_u_get_api"
 
     headers = {
         "Authorization": f"Bearer {OPENAI_API_KEY}",
