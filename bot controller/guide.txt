@@ -1,0 +1,3 @@
+use the code below and run on IDE
++ personal bot Id check , past the your bot token into code and run, send message to the bot and it'll give back the id. if it reject by server after run , revoke the bot token using bot father
++ "bot using api" paste ai api and url where you get api from, with bot username
